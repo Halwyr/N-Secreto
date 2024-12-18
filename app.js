@@ -23,7 +23,7 @@ function exibirTextoNaTela(tag, texto) {
             } else {
                 console.log("Web Speech API não suportada neste navegador.");
             }
-}
+};
 
 //Função para reiniciar o jogo com as mensagens.
 function exibirMensagemInicial() {
@@ -31,7 +31,7 @@ function exibirMensagemInicial() {
         exibirTextoNaTela('h1', 'Jogo do Número Secreto.');
         exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroLimite}.` );
 
-}
+};
 
 exibirMensagemInicial();
 
@@ -73,7 +73,7 @@ function verificarChute() {
                 limparCampo();
         }
 
-}
+};
 
 // Função para limpar o campo após o chute.
 function limparCampo() {
@@ -81,7 +81,7 @@ function limparCampo() {
         chute = document.querySelector('input');
         chute.value = '';
 
-}
+};
 
 // Função para reiniciar o jogo após acertar.
 function reiniciarJogo() {
@@ -92,7 +92,7 @@ function reiniciarJogo() {
         exibirMensagemInicial();
         document.getElementById('reiniciar').setAttribute('disabled' , true);
 
-}
+};
 
 // Criada a função para gerar um número aleatório e adicionada na lista.
 function gerarNumeroAleatorio() {
@@ -117,4 +117,4 @@ function gerarNumeroAleatorio() {
 
        };
 
-}
+};
